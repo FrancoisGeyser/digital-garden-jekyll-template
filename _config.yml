@@ -32,8 +32,8 @@ sass:
 collections:
   notes:
     output: true
-    permalink: /:slug
-  blog:
+    permalink: /:slug:output_ext
+  post:
     output: true
     permalink: /post/:slug
 
