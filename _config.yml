@@ -20,6 +20,8 @@ embed_tweets: false
 permalink:           pretty
 relative_permalinks: false
 
+theme: minima
+
 plugins:
   - jekyll-last-modified-at
 
@@ -31,13 +33,16 @@ collections:
   notes:
     output: true
     permalink: /:slug
+  blog:
+    output: true
+    permalink: /post/:slug
 
 defaults:
-  - scope:
-      path: "**/*"
-    values:
-      layout: "default"
   - scope:
       path: "_notes/**/*.md"
     values:
       layout: "note"
+  - scope:
+      path: "_posts/**/*.md"
+    values:
+      layout: "post"
