@@ -32,17 +32,10 @@ sass:
 collections:
   notes:
     output: true
-    permalink: /:slug:output_ext
-  post:
-    output: true
-    permalink: /post/:slug
+    permalink: /:slug
 
 defaults:
   - scope:
       path: "_notes/**/*.md"
     values:
       layout: "note"
-  - scope:
-      path: "_posts/**/*.md"
-    values:
-      layout: "post"
